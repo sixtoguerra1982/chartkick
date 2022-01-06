@@ -1,3 +1,9 @@
 <h1>Dashboard#index</h1>
 
-<%= column_chart @first_graph , title: 'Ventas totales por mes' %>
+<%= line_chart @first_graph , title: 'Ventas mensuales de los últimos 12 meses(Monto)' %>
+
+<%= line_chart @second_graph , title: 'Ventas mensuales de los últimos 12 meses(Cantidad)' %>
+
+<%= line_chart @venta_promedio , title: 'Promedio de venta de los últimos 12 meses(Monto / Cantidad)' %>
+
+<%= line_chart @consolidado , title: 'Promedio de venta de los últimos 12 meses(Monto / Cantidad)' %>
