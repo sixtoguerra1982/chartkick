@@ -1,3 +1,3 @@
 <h1>Dashboard#index</h1>
 
-<%= column_chart Sale.last_months(12).group(:date).order(date: :asc).sum(:price), title: 'Ventas totales por mes' %>
+<%= column_chart @first_graph , title: 'Ventas totales por mes' %>
